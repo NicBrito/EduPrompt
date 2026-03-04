@@ -11,14 +11,17 @@ from dotenv import load_dotenv
 # Caminhos do projeto
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
-OUTPUTS_DIR = DATA_DIR / "outputs"
-CACHE_DIR = DATA_DIR / "cache"
 SAMPLES_DIR = ROOT_DIR / "samples"
 STUDENTS_FILE = DATA_DIR / "students.json"
 TEMPLATES_DIR = ROOT_DIR / "templates"
 
-# Garante que diretórios necessários existam
-for directory in [DATA_DIR, OUTPUTS_DIR, CACHE_DIR, SAMPLES_DIR]:
+# Diretórios graváveis: usa /tmp na Vercel (filesystem somente leitura)
+_writable_base = Path("/tmp/eduprompt") if os.getenv("VERCEL") else DATA_DIR
+OUTPUTS_DIR = _writable_base / "outputs"
+CACHE_DIR = _writable_base / "cache"
+
+# Garante que diretórios graváveis existam em runtime
+for directory in [OUTPUTS_DIR, CACHE_DIR]:
     directory.mkdir(parents=True, exist_ok=True)
 
 # Carrega variáveis do .env
