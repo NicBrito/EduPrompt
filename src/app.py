@@ -19,6 +19,7 @@ from src.prompts.engine import PromptEngine
 from src.services.ai_client import AIClientError
 from src.services.cache import CacheManager
 from src.services.storage import StorageService
+from src.services.comparison import ComparisonAnalysis
 
 logger = logging.getLogger(__name__)
 
@@ -196,6 +197,65 @@ def clear_cache():
     """Limpa o cache."""
     removed = cache.clear()
     return jsonify({"removed": removed})
+
+
+@app.route("/api/compare", methods=["POST"])
+def compare_versions():
+    """
+    Endpoint para análise comparativa entre versões de prompts.
+
+    Gera o mesmo conteúdo com todas as versões disponíveis e retorna
+    relatório com métricas e observações comparativas.
+    """
+    try:
+        data = request.get_json()
+
+        student_id = data.get("student_id")
+        topic = data.get("topic", "").strip()
+        content_type = data.get("content_type", "explicacao_conceitual")
+        prompt_version = data.get("prompt_version")
+
+        if not student_id:
+            return jsonify({"error": "Selecione um aluno."}), 400
+        if not topic:
+            return jsonify({"error": "Informe um tópico."}), 400
+        if len(topic) > 200:
+            return jsonify({"error": "Tópico muito longo (máx. 200 caracteres)."}), 400
+
+        student = repo.get_by_id(student_id)
+        if not student:
+            return jsonify({"error": f"Aluno '{student_id}' não encontrado."}), 404
+
+        # Map Flask content types to comparison module types
+        type_mapping = {
+            "explicacao_conceitual": "conceptual",
+            "exemplos_praticos": "practical",
+            "perguntas_reflexao": "reflection",
+            "resumo_visual": "visual",
+        }
+        comp_type = type_mapping.get(content_type, "conceptual")
+
+        analyzer = ComparisonAnalysis()
+        report = analyzer.generate_comparison(
+            student=student,
+            topic=topic,
+            content_type=comp_type,
+        )
+
+        # Save report
+        filepath = analyzer.save_report(report)
+
+        return jsonify({
+            "success": True,
+            "report": report,
+            "filepath": filepath,
+        })
+
+    except AIClientError as e:
+        return jsonify({"error": f"Erro na API de IA: {str(e)}"}), 502
+    except Exception as e:
+        logger.exception("Erro na análise comparativa")
+        return jsonify({"error": f"Erro interno: {str(e)}"}), 500
 
 
 def run_web():

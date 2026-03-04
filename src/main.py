@@ -20,6 +20,7 @@ from src.prompts.engine import PromptEngine
 from src.services.ai_client import AIClient, AIClientError
 from src.services.cache import CacheManager
 from src.services.storage import StorageService, ContentRecord
+from src.services.comparison import ComparisonAnalysis
 from src.utils.helpers import setup_logging, safe_input
 
 logger = logging.getLogger(__name__)
@@ -67,6 +68,7 @@ class CLI:
                 "5": self._view_history,
                 "6": self._manage_cache,
                 "7": self._change_prompt_version,
+                "8": self._run_comparison_analysis,
                 "0": self._exit,
             }
 
@@ -104,6 +106,7 @@ class CLI:
         print("│  5. Ver histórico de geração    │")
         print("│  6. Gerenciar cache             │")
         print("│  7. Trocar versão de prompts    │")
+        print("│  8. Análise comparativa completa│")
         print("│  0. Sair                        │")
         print("└─────────────────────────────────┘")
 
@@ -345,6 +348,49 @@ class CLI:
             print(f"✅ Versão alterada para: {self.current_version}")
         else:
             print(f"⚠️  Versão '{choice}' não disponível.")
+
+    def _run_comparison_analysis(self) -> None:
+        """Executa análise comparativa completa entre versões de prompts."""
+        student = self._select_student()
+        if not student:
+            return
+
+        topic = self._select_topic()
+        if not topic:
+            return
+
+        print("\n📚 Tipos de conteúdo para análise comparativa:")
+        types_map = {
+            "1": "conceptual",
+            "2": "practical",
+            "3": "reflection",
+            "4": "visual",
+        }
+        for key, ct in types_map.items():
+            print(f"  {key}. {ct.capitalize()}")
+
+        choice = safe_input("\n→ Selecione o tipo: ")
+        content_type = types_map.get(choice, "conceptual")
+
+        analyzer = ComparisonAnalysis()
+        versions = [v["version"] for v in PromptEngine.list_versions()]
+
+        print(f"\n⏳ Gerando análise comparativa com {len(versions)} versões...")
+        print(f"   Versões: {', '.join(versions)}")
+        print(f"   Isso pode levar alguns minutos.\n")
+
+        report = analyzer.generate_comparison(
+            student=student,
+            topic=topic,
+            content_type=content_type,
+        )
+
+        # Exibe o relatório formatado
+        print(analyzer.format_report_text(report))
+
+        # Salva o relatório
+        filepath = analyzer.save_report(report)
+        print(f"\n📁 Relatório salvo em: {filepath}")
 
     def _exit(self) -> None:
         """Encerra a aplicação."""
