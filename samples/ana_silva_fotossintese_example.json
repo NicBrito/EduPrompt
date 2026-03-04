@@ -1,0 +1,55 @@
+{
+  "student_id": "ana_silva",
+  "topic": "Fotossíntese",
+  "generated_at": "2026-03-03T10:30:00",
+  "contents": {
+    "explicacao_conceitual": {
+      "student_id": "ana_silva",
+      "topic": "Fotossíntese",
+      "content_type": "explicacao_conceitual",
+      "content": "### O que é Fotossíntese?\n\nA fotossíntese é o processo que as plantas usam para fazer seu próprio \"alimento\" usando a luz do sol! Imagine que as plantas são cozinheiras que usam ingredientes especiais: água, gás carbônico (CO₂) e luz solar. Com esses ingredientes, elas preparam uma \"receita\" que produz açúcar (glicose) e oxigênio.\n\n### Por que é importante?\n\nSem a fotossíntese, não teríamos oxigênio para respirar! Além disso, as plantas são a base de toda a cadeia alimentar. Os animais que você gosta (como cachorros e gatos) dependem direta ou indiretamente das plantas para se alimentar.\n\n### Como funciona?\n\nVamos pensar passo a passo:\n\n1. **Passo 1 — Captura da luz:** As folhas das plantas têm uma substância verde chamada clorofila. Ela funciona como uma \"antena\" que capta a luz do sol.\n\n2. **Passo 2 — Absorção de água:** As raízes da planta absorvem água do solo e enviam para as folhas através do caule.\n\n3. **Passo 3 — Absorção de CO₂:** As folhas têm pequenos \"buraquinhos\" chamados estômatos que absorvem o gás carbônico do ar.\n\n4. **Passo 4 — A \"receita\":** Dentro das folhas, a clorofila usa a energia da luz para combinar água + CO₂ e transformar em glicose (açúcar) + oxigênio.\n\n5. **Passo 5 — Resultado:** A planta usa a glicose como energia para crescer, e libera o oxigênio no ar para nós respirarmos!\n\n### Resumo\n\nA fotossíntese é o processo em que as plantas usam luz do sol, água e gás carbônico para produzir seu alimento (glicose) e liberar oxigênio. É graças a esse processo que existe vida na Terra!",
+      "prompt_version": "v2",
+      "prompt_used": "[prompt omitido para brevidade]",
+      "system_prompt_used": "[system prompt omitido para brevidade]",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-03-03T10:30:00"
+    },
+    "exemplos_praticos": {
+      "student_id": "ana_silva",
+      "topic": "Fotossíntese",
+      "content_type": "exemplos_praticos",
+      "content": "### Exemplo 1: A Planta no Quarto\n\n**Contexto:** Você tem uma plantinha no seu quarto perto da janela. Já percebeu que ela sempre cresce em direção à luz?\n\n**Aplicação:** A planta se move em direção à luz porque precisa dela para fazer fotossíntese! Sem luz suficiente, ela não consegue produzir seu alimento.\n\n**Passo a passo:**\n1. Coloque uma planta perto da janela\n2. Observe por uma semana como ela se inclina para a luz\n3. Gire o vaso e veja o que acontece nos próximos dias\n\n**O que aprendemos:** As plantas buscam ativamente a luz porque ela é essencial para a fotossíntese.\n\n### Exemplo 2: Por que o Parque é Fresquinho?\n\n**Contexto:** Quando você vai ao parque num dia quente, já percebeu que debaixo das árvores é mais fresco?\n\n**Aplicação:** As árvores fazem fotossíntese e liberam oxigênio e vapor de água, que refrescam o ar ao redor.\n\n**Passo a passo:**\n1. Num dia quente, meça a temperatura no sol\n2. Agora meça debaixo de uma árvore grande\n3. Compare os dois valores\n\n**O que aprendemos:** As árvores não só dão sombra, mas também refrescam o ar através da fotossíntese e transpiração.\n\n### Exemplo 3: O Aquário e as Plantas Aquáticas\n\n**Contexto:** Se você tem um aquário com plantas, já viu bolhinhas saindo delas?\n\n**Aplicação:** Essas bolhinhas são oxigênio! As plantas aquáticas fazem fotossíntese dentro da água e liberam oxigênio que os peixes usam para respirar.\n\n**Passo a passo:**\n1. Observe as plantas do aquário com a luz acesa\n2. Note as bolhinhas que sobem das folhas\n3. Compare com quando a luz está apagada (sem bolhinhas!)\n\n**O que aprendemos:** A fotossíntese acontece também na água, e podemos ver o oxigênio sendo liberado em forma de bolhas.",
+      "prompt_version": "v2",
+      "prompt_used": "[prompt omitido para brevidade]",
+      "system_prompt_used": "[system prompt omitido para brevidade]",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-03-03T10:30:15"
+    },
+    "perguntas_reflexao": {
+      "student_id": "ana_silva",
+      "topic": "Fotossíntese",
+      "content_type": "perguntas_reflexao",
+      "content": "### Pergunta 1 — Nível: Compreensão\n\n**Pergunta:** Se as plantas precisam de luz para fazer fotossíntese, o que acontece com as plantas que ficam em lugares muito escuros?\n\n**Por que essa pergunta é importante:** Ajuda o aluno a conectar o conceito de fotossíntese com observações do dia a dia.\n\n**Dica para reflexão:** Pense nas plantas que você vê em lugares escuros. Como elas se parecem em comparação com as que ficam no sol?\n\n### Pergunta 2 — Nível: Aplicação\n\n**Pergunta:** Se você fosse cuidar de uma horta, como usaria seu conhecimento sobre fotossíntese para escolher o melhor lugar para plantar?\n\n**Por que essa pergunta é importante:** Estimula a aplicação prática do conhecimento em uma situação real.\n\n**Dica para reflexão:** Pense nos três ingredientes da fotossíntese e como garantir que a planta tenha todos eles.\n\n### Pergunta 3 — Nível: Análise\n\n**Pergunta:** Qual a diferença entre o que as plantas fazem (fotossíntese) e o que nós fazemos (respiração)? Será que uma depende da outra?\n\n**Por que essa pergunta é importante:** Estimula o aluno a comparar processos e entender interdependência.\n\n**Dica para reflexão:** Pense no que cada processo consome e no que produz. Existe uma troca?\n\n### Pergunta 4 — Nível: Avaliação\n\n**Pergunta:** Por que as pessoas dizem que plantar árvores ajuda a combater a poluição? Você concorda? Por quê?\n\n**Por que essa pergunta é importante:** Desenvolve opinião fundamentada sobre um tema ambiental real.\n\n**Dica para reflexão:** Lembre-se de qual gás as plantas absorvem durante a fotossíntese e qual elas liberam.\n\n### Pergunta 5 — Nível: Criação\n\n**Pergunta:** Imagine que você precisa explicar fotossíntese para um amigo usando apenas um desenho (sem palavras). Como seria esse desenho?\n\n**Por que essa pergunta é importante:** Estimula a criatividade e a capacidade de sintetizar informação visualmente.\n\n**Dica para reflexão:** Pense nos elementos principais: sol, planta, água, CO₂, oxigênio, glicose. Como conectar tudo em uma imagem?",
+      "prompt_version": "v2",
+      "prompt_used": "[prompt omitido para brevidade]",
+      "system_prompt_used": "[system prompt omitido para brevidade]",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-03-03T10:30:30"
+    },
+    "resumo_visual": {
+      "student_id": "ana_silva",
+      "topic": "Fotossíntese",
+      "content_type": "resumo_visual",
+      "content": "### Mapa Mental / Diagrama ASCII\n\n```\n                    ☀️ LUZ SOLAR\n                        │\n                        ▼\n            ┌───────────────────────┐\n            │     FOTOSSÍNTESE      │\n            │   (nas folhas verdes) │\n            └───────────┬───────────┘\n                        │\n          ┌─────────────┼─────────────┐\n          │             │             │\n    ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐\n    │ INGREDIENTES│ │ PROCESSO  │ │ PRODUTOS  │\n    └─────┬─────┘ └─────┬─────┘ └─────┬─────┘\n          │             │             │\n    ┌─────▼─────┐       │       ┌─────▼─────┐\n    │ 💧 Água   │       │       │ 🍬 Glicose │\n    │ (raízes)  │       │       │ (alimento) │\n    └───────────┘       │       └────────────┘\n    ┌───────────┐       │       ┌────────────┐\n    │ 🌬️ CO₂    │       │       │ 💨 Oxigênio│\n    │ (ar)      │       │       │ (p/ respirar)│\n    └───────────┘       │       └────────────┘\n                        │\n                  ┌─────▼─────┐\n                  │ CLOROFILA │\n                  │ (pigmento │\n                  │  verde)   │\n                  └───────────┘\n```\n\n### Legenda e Explicação\n\n- **Luz Solar:** A energia que faz tudo funcionar — sem ela, não há fotossíntese.\n- **Ingredientes:** Água (absorvida pelas raízes) e CO₂ (absorvido pelos estômatos nas folhas).\n- **Clorofila:** O pigmento verde nas folhas que captura a luz do sol.\n- **Processo:** A clorofila usa a energia da luz para combinar água e CO₂.\n- **Produtos:** Glicose (energia para a planta crescer) e oxigênio (liberado no ar para nós respirarmos).",
+      "prompt_version": "v2",
+      "prompt_used": "[prompt omitido para brevidade]",
+      "system_prompt_used": "[system prompt omitido para brevidade]",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-03-03T10:30:45"
+    }
+  }
+}
