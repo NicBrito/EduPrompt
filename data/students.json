@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": "ana_silva",
+      "name": "Ana Silva",
+      "age": 12,
+      "knowledge_level": "iniciante",
+      "learning_style": "visual",
+      "interests": ["jogos", "desenho", "animais"]
+    },
+    {
+      "id": "carlos_oliveira",
+      "name": "Carlos Oliveira",
+      "age": 17,
+      "knowledge_level": "intermediário",
+      "learning_style": "leitura-escrita",
+      "interests": ["programação", "matemática", "xadrez"]
+    },
+    {
+      "id": "maria_santos",
+      "name": "Maria Santos",
+      "age": 25,
+      "knowledge_level": "avançado",
+      "learning_style": "cinestésico",
+      "interests": ["ciência de dados", "pesquisa", "música"]
+    },
+    {
+      "id": "pedro_costa",
+      "name": "Pedro Costa",
+      "age": 9,
+      "knowledge_level": "iniciante",
+      "learning_style": "auditivo",
+      "interests": ["dinossauros", "espaço", "futebol"]
+    },
+    {
+      "id": "lucia_ferreira",
+      "name": "Lúcia Ferreira",
+      "age": 20,
+      "knowledge_level": "intermediário",
+      "learning_style": "visual",
+      "interests": ["design", "tecnologia", "sustentabilidade"]
+    }
+  ]
+}
