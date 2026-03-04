@@ -22,18 +22,6 @@ def client():
         yield client
 
 
-@pytest.fixture
-def sample_student():
-    """Aluno de exemplo para testes."""
-    return Student(
-        name="Ana Silva",
-        age=12,
-        knowledge_level=KnowledgeLevel.BEGINNER,
-        learning_style=LearningStyle.VISUAL,
-        interests=["natureza"],
-    )
-
-
 class TestIndexRoute:
     """Testes da página principal."""
 
