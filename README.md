@@ -2,6 +2,9 @@
 
 Plataforma educativa que gera conteúdo personalizado para alunos de diferentes perfis usando técnicas avançadas de engenharia de prompt. Compara automaticamente diferentes versões de prompts com métricas quantitativas.
 
+🔗 **Repositório:** https://github.com/NicBrito/EduPrompt
+🌐 **Deploy:** https://edu-prompt-desafio.vercel.app
+
 ---
 
 ## 🎯 Funcionalidades
@@ -26,8 +29,8 @@ Plataforma educativa que gera conteúdo personalizado para alunos de diferentes 
 ### 1. Clone o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd DevIA
+git clone https://github.com/NicBrito/EduPrompt
+cd EduPrompt
 ```
 
 ### 2. Crie um ambiente virtual
