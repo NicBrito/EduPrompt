@@ -3,7 +3,6 @@
 Plataforma educativa que gera conteúdo personalizado para alunos de diferentes perfis usando técnicas avançadas de engenharia de prompt. Compara automaticamente diferentes versões de prompts com métricas quantitativas.
 
 🔗 **Repositório:** https://github.com/NicBrito/EduPrompt
-🌐 **Deploy:** https://edu-prompt-desafio.vercel.app
 
 ---
 
